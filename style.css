@@ -5,7 +5,7 @@
 html,
 body {
   margin: auto;
-  width: 1440px;
+  max-width: 1440px;
   height: 100vh;
 }
 .container {
@@ -25,12 +25,12 @@ body {
 .header {
   height: 60px;
   background: linear-gradient(50deg, rgb(5, 122, 200), rgb(204, 255, 255));
-  border: 1px solid turquoise;
+  /* border: 1px solid turquoise; */
 }
 .nav {
   display: flex;
   flex-direction: row;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 .nav-list {
   display: flex;
@@ -93,7 +93,7 @@ a:hover::before {
   align-content: space-between;
   justify-content: center;
   padding: 0;
-  width: 1140px;
+  max-width: 1140px;
 }
 .section {
   display: flex;
@@ -102,7 +102,16 @@ a:hover::before {
   flex: 1;
   justify-content: center;
   align-content: center;
-  border: 1px solid green;
+  flex-basis: 70%;
+  /* border: 1px solid green; */
+}
+.section-two {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+  flex: 1;
+  flex-basis: 30%;
+  border-left: 5px solid rgb(118, 186, 186);
 }
 .section-about {
   display: flex;
@@ -116,19 +125,19 @@ a:hover::before {
   align-items: center;
   gap: 1rem;
 
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 .section-about-bio > * {
   flex: 1;
-  border: 1px solid blue;
-  border-radius: 7%;
+  /* border: 1px solid blue; */
+  /* border-radius: 7%; */
 }
 .section-profile-logo {
   display: block;
   width: 200px;
   height: 200px;
   /* margin-left: 100px; */
-  border-radius: 9%;
+  border-radius: 20%;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
   filter: grayscale(0.2) brightness(1.05);
   transition: 0.3s;
@@ -147,23 +156,28 @@ a:hover::before {
 }
 .main-one {
   display: flex;
-  flex-wrap: wrap;
   flex-grow: 1;
-  align-content: center;
-  justify-content: center;
-  border: 1px solid green;
-  border-radius: 2%;
-  background: rebeccapurple;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-start;
+  /* border: 1px solid green; */
+  border-bottom: 2px solid rgb(118, 186, 186);
+  /* border-radius: 2%; */
+}
+.main-one > h2 {
+  flex-basis: 40%;
 }
 .main-two {
   display: flex;
   flex-wrap: wrap;
-  background: brown;
-  flex: 1;
+  font-family: "Syne";
+  color: rgb(97, 97, 97);
+  height: 10%;
+  /* background: brown; */
   justify-content: center;
   align-content: center;
-  border: 1px solid green;
-  border-radius: 2%;
+  /* border: 1px solid rgb(11, 226, 11);
+  border-radius: 8%; */
 }
 .footer {
   height: 30px;
@@ -185,10 +199,27 @@ a:hover::before {
   position: relative;
   left: 0;
   list-style: none;
-  margin: 10px 0;
+  font-family: "Roboto", sans-serif;
+  margin: 5px 0;
 }
 .list ul li:hover {
-  left: 10px;
+  left: 3px;
+}
+.list-main-section {
+  font-family: "Roboto", sans-serif;
+  font-size: medium;
+  /* letter-spacing: 0.1em; */
+  text-align: left;
+  color: rgb(97, 97, 97);
+}
+.list-main-section ul {
+  list-style-type: circle;
+}
+.main-one > h2 {
+  font-family: "Syne";
+  letter-spacing: 0.1em;
+  color: rgb(97, 97, 97);
+  text-align: center;
 }
 .footer-data {
   /* display: flex; */
@@ -206,4 +237,48 @@ a:hover::before {
   background-image: url("./assets/svg/logo_rs2.svg");
   background-repeat: no-repeat;
   background-size: contain;
+}
+.main-two-code {
+  text-align: left;
+  font-size: medium;
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  /* justify-content: center; */
+  margin-top: 30px;
+  align-items: center;
+}
+.contacts-list {
+  display: flex;
+  gap: 2rem;
+}
+
+.contacts-telegram {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  background-image: url("./assets/svg/telegram-svgrepo-com.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.contacts-mail {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  background-image: url("./assets/svg/mail-svgrepo-com.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.contacts-github {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  background-image: url("./assets/svg/github-octocat.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.main-one:last-child {
+  border-bottom: none;
 }
