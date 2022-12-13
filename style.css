@@ -25,12 +25,10 @@ body {
 .header {
   height: 60px;
   background: linear-gradient(50deg, rgb(5, 122, 200), rgb(204, 255, 255));
-  /* border: 1px solid turquoise; */
 }
 .nav {
   display: flex;
   flex-direction: row;
-  /* border: 1px solid green; */
 }
 .nav-list {
   display: flex;
@@ -103,7 +101,6 @@ a:hover::before {
   justify-content: center;
   align-content: center;
   flex-basis: 70%;
-  /* border: 1px solid green; */
 }
 .section-two {
   display: flex;
@@ -124,23 +121,17 @@ a:hover::before {
   display: flex;
   align-items: center;
   gap: 1rem;
-
-  /* border: 1px solid blue; */
 }
 .section-about-bio > * {
   flex: 1;
-  /* border: 1px solid blue; */
-  /* border-radius: 7%; */
 }
 .section-profile-logo {
   display: block;
   width: 200px;
   height: 200px;
-  /* margin-left: 100px; */
-  border-radius: 20%;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
-  filter: grayscale(0.2) brightness(1.05);
-  transition: 0.3s;
+  border-radius: 3%;
+  box-shadow: 0 3px 5px rgba(14, 57, 210, 0.6);
+  transition: 1s;
 }
 
 .section-profile-logo:hover {
@@ -160,9 +151,7 @@ a:hover::before {
   gap: 1rem;
   align-items: center;
   justify-content: flex-start;
-  /* border: 1px solid green; */
   border-bottom: 2px solid rgb(118, 186, 186);
-  /* border-radius: 2%; */
 }
 .main-one > h2 {
   flex-basis: 40%;
@@ -173,18 +162,14 @@ a:hover::before {
   font-family: "Syne";
   color: rgb(97, 97, 97);
   height: 10%;
-  /* background: brown; */
   justify-content: center;
   align-content: center;
-  /* border: 1px solid rgb(11, 226, 11);
-  border-radius: 8%; */
 }
 .footer {
   height: 30px;
   background: linear-gradient(50deg, rgb(204, 255, 255), rgb(5, 122, 200));
   justify-content: space-evenly;
   align-items: center;
-  /* border: 1px solid turquoise; */
 }
 .list {
   font-family: "Syne";
@@ -208,7 +193,6 @@ a:hover::before {
 .list-main-section {
   font-family: "Roboto", sans-serif;
   font-size: medium;
-  /* letter-spacing: 0.1em; */
   text-align: left;
   color: rgb(97, 97, 97);
 }
@@ -222,7 +206,6 @@ a:hover::before {
   text-align: center;
 }
 .footer-data {
-  /* display: flex; */
   flex: 1;
 }
 .link {
@@ -231,7 +214,6 @@ a:hover::before {
 }
 .school {
   display: flex;
-  /* font-size: 100px; */
   margin-left: 50%;
   height: 60px;
   background-image: url("./assets/svg/logo_rs2.svg");
@@ -246,7 +228,6 @@ a:hover::before {
   display: flex;
   flex-direction: column;
   flex: 1;
-  /* justify-content: center; */
   margin-top: 30px;
   align-items: center;
 }
@@ -281,4 +262,10 @@ a:hover::before {
 }
 .main-one:last-child {
   border-bottom: none;
+}
+.main-two-code > p {
+  text-align: center;
+}
+.main-two-code > p > a {
+  color: rgb(103, 157, 174);
 }
