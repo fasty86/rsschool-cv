@@ -82,7 +82,6 @@ a:hover::before {
   align-items: center;
   justify-content: space-between;
   background-color: rgb(210, 220, 236);
-  border: 1px solid turquoise;
 }
 .main-total {
   display: flex;
@@ -129,6 +128,7 @@ a:hover::before {
   display: block;
   width: 200px;
   height: 200px;
+  margin-top: 5px;
   border-radius: 3%;
   box-shadow: 0 3px 5px rgba(14, 57, 210, 0.6);
   transition: 1s;
