@@ -269,3 +269,6 @@ a:hover::before {
 .main-two-code > p > a {
   color: rgb(103, 157, 174);
 }
+.code {
+  font-size: large;
+}

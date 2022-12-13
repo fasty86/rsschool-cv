@@ -22,10 +22,10 @@
       <nav class="nav container-item">
         <ul class="nav-list">
           <li class="nav-elem">
-            <a href="#contacts" class="nav-link">Contacts</a>
+            <a href="#bio" class="nav-link">Bio</a>
           </li>
           <li class="nav-elem">
-            <a href="#summary" class="nav-link">Summary</a>
+            <a href="#contacts" class="nav-link">Contacts</a>
           </li>
           <li class="nav-elem">
             <a href="#skills" class="nav-link">Skills</a>
@@ -35,8 +35,12 @@
             <a href="#education" class="nav-link">Education</a>
           </li>
           <li class="nav-elem">
-            <a href="#english" class="nav-link">English</a>
+            <a href="#summary" class="nav-link">Summary</a>
           </li>
+        </li>
+        <li class="nav-elem">
+          <a href="#lang" class="nav-link">Languages</a>
+        </li>
         </ul>
       </nav>
     </header>
@@ -47,7 +51,7 @@
           alt="Oleg's avatar"
           class="section-profile-logo"
         />
-        <div class="section-about-bio">
+        <div class="section-about-bio" id="bio">
           <div class="list">
             <h2>Bio:</h2>
             <ul>
@@ -58,7 +62,7 @@
             </ul>
           </div>
         </div>
-        <div class="contacts list">
+        <div class="contacts list"  id="contacts">
           <h2>Contacts:</h2>
           <ul class="contacts-list">
             <li class="contacts-list-elem">
@@ -93,7 +97,7 @@
           <div class="main-one">
             <h2>Skills:</h2>
             <div class="list-main-section">
-              <ul>
+              <ul id="skills">
                 <li>HTML5 , CSS</li>
                 <li>Javascript</li>
                 <li>ABAP</li>
@@ -107,7 +111,7 @@
           <div class="main-one">
             <h2>Education:</h2>
             <div class="list-main-section">
-              <ul>
+              <ul id="education">
                 <li>MEPhi(Moscow Engineering Physics Institute)</li>
               </ul>
             </div>
@@ -115,7 +119,7 @@
           <div class="main-one">
             <h2>Summary:</h2>
             <div class="list-main-section">
-              <ul>
+              <ul id="summary">
                 <li>
                   As a student start working as programmer in 1C consulting
                   franchise. Soon after i switched to work with SAP ERP as BW/BI
@@ -130,7 +134,7 @@
           <div class="main-one">
             <h2>Languages:</h2>
             <div class="list-main-section">
-              <ul>
+              <ul id="lang">
                 <li>Russian(native)</li>
                 <li>
                   English( reading fiction and non fiction books, listening
@@ -151,7 +155,7 @@
                 >CodeWars kata "Range extraction"</a
               >
             </p>
-            <pre><code>
+            <pre><code id="code">
               function solution(list){
                 let result = []
                   let formatted = []
