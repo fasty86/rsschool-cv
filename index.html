@@ -140,7 +140,7 @@
               let formatted = []
               let current = []
               let last
-              list.forEach(elem =&gt {
+              list.forEach(elem = &gt; {
               if (current.length == 0) {
               current.push(elem)
               last = elem
@@ -157,9 +157,9 @@
               }
               })
               formatted.push(current)
-              formatted.map(elem =&gt{
+              formatted.map(elem = &gt;{
               if (elem.length &lt; 3){
-              elem.map(el =&gt result.push([el]))
+              elem.map(el = &gt; result.push([el]))
               }else{
               let range = []
               range.push(elem[0])
@@ -167,8 +167,8 @@
               result.push(range)
               }
               })
-              //console.log(result.map(elem =&gt elem.join('-')).join(','))
-              return result.map(elem =&gt elem.join('-')).join(',')
+              //console.log(result.map(elem =&gt; elem.join('-')).join(','))
+              return result.map(elem =&gt; elem.join('-')).join(',')
               }
             </code></pre>
         </div>
