@@ -42,7 +42,7 @@
   </header>
   <main class="main">
     <section class="section-about">
-      <img src="./assets/img/avatar_2.png" alt="Oleg's avatar" class="section-profile-logo" />
+      <img src="./assets/img/avatar_2.png" alt="Oleg's avatar" class="section-profile-logo">
       <div class="section-about-bio" id="bio">
         <div class="list">
           <h1>Bio:</h1>
@@ -58,7 +58,7 @@
         <h2>Contacts:</h2>
         <ul class="contacts-list">
           <li class="contacts-list-elem">
-            <a href="https://t.me/fasty86" target="_blank" class="contacts-telegram">
+            <a href="https://t.me/fasty86" target="_blank" class="contacts-telegram" aria-label="telegram contact">
             </a>
           </li>
           <li class="contacts-list-elem">
@@ -140,7 +140,7 @@
               let formatted = []
               let current = []
               let last
-              list.forEach(elem => {
+              list.forEach(elem =&gt {
               if (current.length == 0) {
               current.push(elem)
               last = elem
@@ -157,9 +157,9 @@
               }
               })
               formatted.push(current)
-              formatted.map(elem =>{
+              formatted.map(elem =&gt{
               if (elem.length &lt; 3){
-              elem.map(el => result.push([el]))
+              elem.map(el =&gt result.push([el]))
               }else{
               let range = []
               range.push(elem[0])
@@ -167,8 +167,8 @@
               result.push(range)
               }
               })
-              //console.log(result.map(elem => elem.join('-')).join(','))
-              return result.map(elem => elem.join('-')).join(',')
+              //console.log(result.map(elem =&gt elem.join('-')).join(','))
+              return result.map(elem =&gt elem.join('-')).join(',')
               }
             </code></pre>
         </div>
